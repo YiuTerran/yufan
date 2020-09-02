@@ -25,19 +25,6 @@ type Resp struct {
 	Data    json.RawMessage `json:"data"`
 }
 
-type personResp struct {
-	ID        string `json:"id,omitempty"`
-	IdCardNum string `json:"idCardNum,omitempty"`
-	Name      string `json:"name,omitempty"`
-}
-
-type faceResp struct {
-	FaceID   string `json:"faceId"`
-	Feature  string `json:"feature"`
-	Path     string `json:"path"`
-	PersonId string `json:"personId"`
-}
-
 func checkResp(r *req.Resp, err error) (*Resp, error) {
 	if err != nil {
 		return nil, err
