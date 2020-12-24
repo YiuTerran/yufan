@@ -25,6 +25,7 @@ var (
 	envs = []*envInfo{
 		{"建造汇", "https://www.whjzh.cn"},
 		{"仙桃建管通", "http://119.36.247.108"},
+		{"车都集团", "http://58.49.51.38"},
 	}
 )
 
@@ -86,7 +87,7 @@ func main() {
 			fmt.Printf("%s设置回调失败，请检查输入以及网络情况\n", ip)
 		}
 	}
-	fmt.Println("按任意键退出")
+	fmt.Println("设置完成，按回车键退出")
 	var exit string
 	_, _ = fmt.Scanln(&exit)
 }
